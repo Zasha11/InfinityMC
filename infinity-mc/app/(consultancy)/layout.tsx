@@ -1,0 +1,16 @@
+import { Navbar } from "@/components/ui/navbar";
+import { Footer } from "@/components/layout/footer";
+
+export default function ConsultancyLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <>
+      <Navbar />
+      {children}
+      <Footer />
+    </>
+  );
+}

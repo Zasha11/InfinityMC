@@ -1,0 +1,231 @@
+.footer {
+  background: #2e1c19;
+  color: #f9f2e8;
+  border-top: 4px solid var(--brand-gold);
+}
+.inner {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding: 0 48px;
+}
+.invitation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 48px 0;
+  border-bottom: 1px solid #ffffff1f;
+}
+.eyebrow {
+  color: var(--brand-gold-light);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  margin-bottom: 14px;
+}
+.invitation h2 {
+  max-width: 650px;
+  font:
+    normal clamp(27px, 3vw, 38px)/1.25 Georgia,
+    serif;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+.enquire {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  flex-shrink: 0;
+  border: 1px solid var(--brand-gold);
+  border-radius: 5px;
+  padding: 15px 25px;
+  color: #332019;
+  background: var(--brand-gold-light);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.enquire:hover {
+  background: #fff0d8;
+}
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 0.85fr 1.2fr;
+  gap: 64px;
+  padding: 52px 0;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  color: #f4e3cb;
+  font:
+    bold 26px/1.15 Georgia,
+    serif;
+  text-decoration: none;
+}
+.mark {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 58px;
+  background: #980e0d;
+  border-radius: 3px 16px 3px 16px;
+  color: white;
+  font:
+    56px/1 Georgia,
+    serif;
+  box-shadow: 0 0 0 1px var(--brand-gold);
+}
+.brand small {
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+.description {
+  max-width: 320px;
+  color: #d0beb1;
+  font-size: 14px;
+  line-height: 1.85;
+  margin: 22px 0;
+}
+.email,
+.phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #ead5ba;
+  font-size: 13px;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+.columns h3 {
+  color: #fff6eb;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.services ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 16px;
+}
+.services a {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+  color: #d0beb1;
+  font-size: 13px;
+  line-height: 1.6;
+  text-decoration: none;
+}
+.services svg {
+  flex-shrink: 0;
+  color: #bd9867;
+}
+.office {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+.office > svg {
+  flex-shrink: 0;
+  color: #d8b783;
+  margin-top: 2px;
+}
+.office h4 {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #ead5ba;
+}
+.office address {
+  color: #d0beb1;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.9;
+}
+.phone {
+  margin-right: 16px;
+  margin-bottom: 8px;
+}
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px 0;
+  border-top: 1px solid #ffffff1f;
+  color: #c3afa1;
+  font-size: 11px;
+  line-height: 1.7;
+}
+.bottom nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.bottom a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+.footer a:hover:not(.enquire) {
+  color: #fff7e9;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.footer a:focus-visible {
+  outline: 2px solid #e7c79e;
+  outline-offset: 5px;
+  border-radius: 3px;
+}
+@media (max-width: 1000px) {
+  .inner {
+    padding-inline: 24px;
+  }
+  .columns {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .brandColumn {
+    grid-column: 1 / -1;
+  }
+  .description {
+    max-width: 520px;
+  }
+}
+@media (max-width: 600px) {
+  .invitation {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 24px;
+    padding-block: 36px;
+  }
+  .columns {
+    grid-template-columns: 1fr;
+    padding-block: 36px;
+    gap: 32px;
+  }
+  .brandColumn {
+    grid-column: auto;
+  }
+  .services a {
+    justify-content: flex-start;
+  }
+  .bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .bottom nav {
+    gap: 20px;
+  }
+}

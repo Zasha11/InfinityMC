@@ -5,6 +5,9 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --color-gold: var(--brand-gold);
+  --color-gold-dark: var(--brand-gold-dark);
+  --color-gold-light: var(--brand-gold-light);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
@@ -49,6 +52,13 @@
 }
 
 :root {
+  --brand-gold: #b58a42;
+  --brand-gold-dark: #805d26;
+  --brand-gold-light: #e7cc98;
+  --brand-gold-soft: #fbf3e2;
+  --brand-gold-border: #deca9e;
+  --brand-gold-gradient: linear-gradient(110deg, #805d26, #e7cc98, #b58a42);
+
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
