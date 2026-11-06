@@ -28,32 +28,20 @@
   width: fit-content;
   text-decoration: none;
 }
-.mark {
-  display: grid;
-  place-items: center;
-  width: 72px;
-  height: 78px;
-  border-radius: 4px 22px 4px 22px;
-  background: var(--nav-red);
-  color: white;
-  font:
-    76px/1 Georgia,
-    serif;
-  box-shadow:
-    0 0 0 1px var(--brand-gold),
-    0 3px 12px #805d2614;
+.logo {
+  display: block;
+  width: 112px;
+  height: auto;
+  flex-shrink: 0;
 }
 .wordmark {
+  max-width: 180px;
   color: var(--nav-brown);
   font:
-    bold 27px/1.15 Georgia,
+    bold 21px/1.25 Georgia,
     serif;
 }
-.wordmark > span {
-  display: block;
-  margin-top: 3px;
-  font-size: 17px;
-}
+
 .contact {
   display: flex;
   justify-content: flex-end;
@@ -195,15 +183,11 @@
     column-gap: 24px;
   }
   .wordmark {
-    font-size: 23px;
+    font-size: 18px;
   }
-  .wordmark > span {
-    font-size: 14px;
-  }
-  .mark {
-    width: 60px;
-    height: 66px;
-    font-size: 64px;
+
+  .logo {
+    width: 88px;
   }
   .brand {
     gap: 12px;
@@ -291,16 +275,11 @@
     column-gap: 12px;
   }
   .wordmark {
-    font-size: 20px;
+    font-size: 16px;
   }
-  .wordmark > span {
-    max-width: 150px;
-    font-size: 12px;
-  }
-  .mark {
-    width: 48px;
-    height: 54px;
-    font-size: 52px;
+
+  .logo {
+    width: 88px;
   }
 }
 

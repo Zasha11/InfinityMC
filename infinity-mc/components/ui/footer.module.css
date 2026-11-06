@@ -65,24 +65,18 @@
     serif;
   text-decoration: none;
 }
-.mark {
-  display: grid;
-  place-items: center;
-  width: 52px;
-  height: 58px;
-  background: #980e0d;
-  border-radius: 3px 16px 3px 16px;
-  color: white;
-  font:
-    56px/1 Georgia,
-    serif;
-  box-shadow: 0 0 0 1px var(--brand-gold);
-}
-.brand small {
+.logo {
   display: block;
-  font-size: 14px;
-  font-weight: normal;
-  margin-top: 5px;
+  width: 112px;
+  height: auto;
+  flex-shrink: 0;
+  padding: 6px;
+  border-radius: 4px;
+  background: #fff;
+}
+.wordmark {
+  display: block;
+  font: bold 32px/1.25 Georgia, serif;
 }
 .description {
   max-width: 320px;
@@ -177,7 +171,7 @@
   gap: 5px;
   text-decoration: none;
 }
-.footer a:hover:not(.enquire) {
+.footer a:hover:not(.enquire):not(.brand) {
   color: #fff7e9;
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -203,6 +197,15 @@
   }
 }
 @media (max-width: 600px) {
+  .brand {
+    gap: 12px;
+  }
+  .logo {
+    width: 88px;
+  }
+  .wordmark {
+    font-size: 24px;
+  }
   .invitation {
     align-items: flex-start;
     flex-direction: column;

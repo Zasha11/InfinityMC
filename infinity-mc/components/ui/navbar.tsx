@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { ArrowRight, ChevronDown, Mail, Menu, Phone, X } from "lucide-react";
@@ -8,6 +9,7 @@ import styles from "./navbar.module.css";
 
 const navigation = [
   { label: "Home", href: "/" },
+  { label: "About us", href: "/about" },
   {
     label: "Corporate Secretarial",
     href: "/services/corporate-secretarial",
@@ -175,11 +177,15 @@ export function Navbar() {
           onClick={closeMenus}
           aria-label="Infinity Management Consultants home"
         >
-          <span className={styles.mark} aria-hidden="true">
-            ∞
-          </span>
+          <Image
+            src="/infinity-logo.png"
+            alt="新英菲 Infinity"
+            width={1413}
+            height={1113}
+            className={styles.logo}
+          />
           <span className={styles.wordmark}>
-            INFINITY<span>Management Consultants</span>
+            Management<br />Consultants
           </span>
         </Link>
 

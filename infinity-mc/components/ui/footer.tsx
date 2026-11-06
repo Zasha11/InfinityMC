@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
 import styles from "./footer.module.css";
 
@@ -31,11 +32,15 @@ export function Footer() {
               className={styles.brand}
               aria-label="Infinity Management Consultants home"
             >
-              <span className={styles.mark} aria-hidden="true">
-                ∞
-              </span>
-              <span>
-                INFINITY<small>Management Consultants</small>
+              <Image
+                src="/infinity-logo.png"
+                alt="新英菲 Infinity"
+                width={1413}
+                height={1113}
+                className={styles.logo}
+              />
+              <span className={styles.wordmark}>
+                Management<br />Consultants
               </span>
             </Link>
             <p className={styles.description}>
@@ -102,6 +107,7 @@ export function Footer() {
           <p>© 2026 Infinity Management Consultants. All rights reserved.</p>
           <nav aria-label="Footer navigation">
             <Link href="/">Home</Link>
+            <Link href="/about">About us</Link>
             <Link href="/resources">News & resources</Link>
             <a href="mailto:sec.imc@gmail.com">
               Contact us <ArrowUpRight size={13} aria-hidden="true" />
